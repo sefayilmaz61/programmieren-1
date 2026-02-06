@@ -8,6 +8,7 @@ int main()
 
     printf("Adresse von ptr1 (zweites Element): %p\n", (void*)ptr1);
     printf("Adresse von ptr2 (letztes Element): %p\n", (void*)ptr2);
+
     printf("Differenz ptr2 - ptr1: %ld\n", ptr2 - ptr1);
 
     return 0;
