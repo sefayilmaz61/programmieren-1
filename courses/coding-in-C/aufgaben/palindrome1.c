@@ -19,10 +19,10 @@ int main(void){
     printf("String: %s\n", phrase);
     printf("String via Pointer: %s\n", ptr);
 
+    //FALSCH: input_string("AActions speak louder than words")
+    //RICHTIG: schau folgenden Code:
     char sentence[] = "AAtions speak louder than words";
     input_string(sentence);
-
-    input_string("AActions speak louder than words");
 
     printf("After function call: %s\n", sentence);
 
