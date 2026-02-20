@@ -7,15 +7,15 @@ struct car {
     char model[50];
 };
 
-void refuel(struct car *car, float amount)
+void refuel(struct car *p_car, float amount)
 {
-    if (car->fuel_level + amount <= car->max_fuel_level) 
+    if (p_car->fuel_level + amount <= p_car->max_fuel_level) 
     {
-        car->fuel_level += amount;
+        p_car->fuel_level += amount;
     } 
     else 
     {
-        car->fuel_level = car->max_fuel_level;
+        p_car->fuel_level = p_car->max_fuel_level;
     }
 }
 
