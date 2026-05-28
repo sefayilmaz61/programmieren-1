@@ -15,6 +15,9 @@ private:
     bool brake_light_on;
 
 public:
+
+    static constexpr double MAX_SPEED_KMH = 200.0;
+
     Vehicle(const std::string &vehicle_model);
 
     void accelerate(double amount_kmh);
@@ -26,7 +29,7 @@ public:
     double get_steering_angle() const;
     double get_lane_offset() const;
 
-    std::string &get_model();
+    const std::string &get_model() const;
 
     bool is_brake_light_on() const;
 
